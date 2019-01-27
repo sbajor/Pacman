@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="pl.edu.wat.wcy.HighScore" table="HighScores">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="playerNick" type="java.lang.String">
+            <column name="PlayerNick" />
+        </property>
+        <property name="score" type="int">
+            <column name="Score" />
+        </property>
+    </class>
+</hibernate-mapping>
